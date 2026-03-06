@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "Kanun";
+}
+
+<div class="container mt-5">
+
+    <h1 class="text-center text-primary mb-4">📜 Türk Bayrağı Kanunu</h1>
+
+    <div class="card shadow p-4">
+
+        <p>
+            Türk bayrağı 2893 sayılı Türk Bayrağı Kanunu ile korunmaktadır.
+            Bayrağa saygısızlık yapmak suçtur ve cezai yaptırımı vardır.
+        </p>
+
+        <ul class="mt-3">
+            <li>Yere atılamaz</li>
+            <li>Yırtık kullanılamaz</li>
+            <li>Ticari amaçla kullanılamaz</li>
+            <li>Saygı ile göndere çekilir</li>
+        </ul>
+
+        <hr>
+
+        <h4>Sen de düşüncelerini paylaş!</h4>
+
+        <div class="mt-3">
+            <a asp-controller="Yorum" asp-action="Create" class="btn btn-success">
+                ✍️ Görüşünü Yaz
+            </a>
+
+            <a asp-controller="Yorum" asp-action="Index" class="btn btn-secondary">
+                📋 Yorumları Gör
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+

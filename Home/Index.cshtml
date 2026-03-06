@@ -1,0 +1,87 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+
+    <!-- HERO ALANI -->
+    <div class="text-center p-5 bg-danger text-white rounded shadow-lg">
+
+        <h1 class="display-3 fw-bold">🇹🇷 Türk Bayrağı</h1>
+
+        <p class="lead mt-3">
+            Bağımsızlığımızın simgesi, şehitlerimizin emaneti,
+            milletimizin gururu olan ay yıldızlı bayrağımızı
+            daha yakından tanımaya hazır mısınız?
+        </p>
+
+    </div>
+
+
+    <!-- BİLGİ KARTLARI -->
+    <div class="row mt-5 text-center">
+
+        <div class="col-md-4">
+            <div class="card shadow h-100">
+                <div class="card-body">
+                    <h4>📖 Anlamı</h4>
+                    <p>
+                        Kırmızı rengi şehit kanlarını,
+                        ay ve yıldız ise bağımsızlığı temsil eder.
+                    </p>
+
+                    <a asp-action="Anlam" class="btn btn-danger">Detaylı Oku</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow h-100">
+                <div class="card-body">
+                    <h4>📏 Ölçüleri</h4>
+                    <p>
+                        Bayrağımız belirli matematiksel oranlara göre
+                        tasarlanmıştır ve standarttır.
+                    </p>
+
+                    <a asp-action="Olculer" class="btn btn-dark">Detaylı Oku</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow h-100">
+                <div class="card-body">
+                    <h4>📜 Kanun</h4>
+                    <p>
+                        Türk Bayrağı kanun ile korunur.
+                        Saygı göstermek her vatandaşın görevidir.
+                    </p>
+
+                    <a asp-action="Kanun" class="btn btn-primary">Detaylı Oku</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ALT MESAJ -->
+    <div class="text-center mt-5 p-4">
+
+        <h3 class="text-danger">
+            "Bayrakları bayrak yapan üstündeki kandır,
+            toprak eğer uğrunda ölen varsa vatandır."
+        </h3>
+
+        <p class="mt-3">
+            Sen de bayrağımız hakkındaki duygu ve düşüncelerini bizimle paylaş.
+        </p>
+
+        <a asp-controller="Yorum" asp-action="Create" class="btn btn-success btn-lg">
+            ✍️ Yorum Yaz
+        </a>
+
+    </div>
+
+</div>
