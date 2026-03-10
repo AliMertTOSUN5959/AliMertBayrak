@@ -1,0 +1,28 @@
+﻿@model AliMertBayrak.Models.Yorum
+
+@{
+    ViewData["Title"] = "Duygu ve Düşüncelerini Paylaş";
+}
+
+<h2 class="text-center text-danger mt-4">🇹🇷 Bayrağımız Hakkındaki Düşüncelerin</h2>
+
+<div class="container mt-4" style="max-width:600px;">
+
+    <form asp-action="Ekle" method="post">
+
+        <div class="mb-3">
+            <label class="form-label">Öğrenci Adı</label>
+            <input asp-for="OgrenciAdi" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Duygu ve Düşüncelerin</label>
+            <textarea asp-for="Duygu" class="form-control" rows="5"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-danger w-100">
+            Kaydet
+        </button>
+
+    </form>
+</div>

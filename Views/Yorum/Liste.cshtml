@@ -1,0 +1,29 @@
+﻿@model List<AliMertBayrak.Models.Yorum>
+
+@{
+    ViewData["Title"] = "Tüm Yorumlar";
+}
+
+<h2 class="text-center text-danger mt-4">🇹🇷 Öğrenci Yorumları</h2>
+
+<table class="table table-striped mt-4">
+    <thead class="table-danger">
+        <tr>
+            <th>Ad</th>
+            <th>Duygu</th>
+            <th>Tarih</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.OgrenciAdi</td>
+                <td>@item.Duygu</td>
+                <td>@item.Tarih.ToShortDateString()</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
